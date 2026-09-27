@@ -66,7 +66,7 @@ def remove_emp(request, emp_id = 0):
      return render(request, 'remove_emp.html', emp_data )
 
 
-def filter_emp(request):
+def find_emp(request):
     if request.method == 'POST':
         name = request.POST['name']
         dept = request.POST['dept']
@@ -85,7 +85,7 @@ def filter_emp(request):
         return render(request, 'view_all_emp.html', emp_data)
 
     elif request.method == 'GET':
-        return render(request, 'filter_emp.html')
+        return render(request, 'find_emp.html')
 
     else:
         return HttpResponse('Employee not found')
