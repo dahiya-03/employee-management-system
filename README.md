@@ -1,46 +1,104 @@
-                 Employee Management System (EMS)
-This is a simple Employee Management System built using Python, Django, HTML, CSS, and Bootstrap 5.
-The project allows you to manage employees and keep track of their departments, roles, salary, bonus, phone number, and joining date.
+# Employee Management System
 
-Features
-•	View Employees – View all employees in a table with their details.
-•	Add Employee – Add a new employee by entering their basic information and selecting a department and role.
-•	Remove Employee – Remove an employee from the system.
-•	Search  –  Search employees by name, department or role.
+A web-based Employee Management System developed using **Python, Django, HTML, CSS, and Bootstrap 5**.
 
-Technologies Used
-•	Python
-•	Django
-•	HTML5
-•	CSS3
-•	Bootstrap 5
-•	SQLite
-•	Git & GitHub
+This project provides a user-friendly interface for managing employee records. It demonstrates Django's Model-View-Template (MVT) architecture, database operations, form handling, and backend development.
 
-The project mainly contains:
-•	models.py – Defines the Department, Role, and Employee database models.
-•	views.py – Contains the logic for adding, viewing, removing, and filtering employees.
-•	templates – Contains the HTML pages used for the website.
-•	db.sqlite3 – SQLite database used for storing the project data.
+## Features
 
-How to Run the Project Locally
-1. Clone the repository
-      https://github.com/your-username/employee-management-system.git
-2. Go to the project folder
-     cd employee-management-system
-3. Create a virtual environment
-     python -m venv emp
-4.Activate the virtual environment.
-   Windows:
-     emp\Scripts\activate
-   macOS/Linux:
-     source emp/bin/activate
-5. Install Django
-     pip install django
-6. Apply migrations
-     python manage.py makemigrations
-     python manage.py migrate
-7. Start the development server
-     python manage.py runserver
-8. Then open the URL shown in the terminal, usually:
-     http://127.0.0.1:8000/
+- **Add Employees:** Create new employee records.
+- **View Employees:** Display employee information.
+- **Remove Employees:** Delete employee records from the system.
+- **Search Employees:** Find employees using the application's search functionality.
+- **Responsive Interface:** User interface developed using HTML, CSS, and Bootstrap 5.
+
+## Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Backend programming |
+| Django | Web framework |
+| HTML | Webpage structure |
+| CSS | Styling |
+| Bootstrap 5 | Responsive user interface |
+| SQLite | Development database |
+
+## Project Structure
+
+The project follows Django's Model-View-Template (MVT) architecture.
+
+- **Models:** Define employee data and database structure.
+- **Views:** Handle application logic and HTTP requests.
+- **Templates:** Render the user interface.
+- **URLs:** Map requests to application views.
+
+## Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/dahiya-03/employee-management-system.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd employee-management-system
+```
+
+### 3. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+### 4. Activate the Virtual Environment
+
+For Windows PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+### 5. Install Dependencies
+
+If the repository includes `requirements.txt`:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Otherwise, install the dependencies documented for the project before continuing.
+
+### 6. Apply Database Migrations
+
+Run the following command from the directory containing `manage.py`:
+
+```bash
+python manage.py migrate
+```
+
+### 7. Start the Development Server
+
+```bash
+python manage.py runserver
+```
+
+Open your browser and visit:
+
+http://127.0.0.1:8000/
+
+## Screenshots
+
+Screenshots of the application's pages will be added here.
+
+## Future Improvements
+
+- PostgreSQL database integration
+- User authentication and authorization
+- Employee record editing
+- Deployment to a cloud hosting platform
+
+## Author
+
+**GitHub:** [dahiya-03](https://github.com/dahiya-03)
